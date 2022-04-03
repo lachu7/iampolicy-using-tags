@@ -6,7 +6,7 @@ Hello folks, today we are going to write an IAM policy that could list all the i
 
 ### What exactly are we doing here?
 
-Suppose, if you have two instances with the same name tag "webserver" and project tag set to "apache". But the enviornment tag of one instance is set to "prod" and the other is set to "dev". So here, what we exacly going to do is creating an IAM user with a custom policy so that this user will have the privilege to see the list of instances on the AWS console, but will only have privilege to stop, start and reboot the instance with env tage set to "dev".
+Suppose, if you have two instances with the same name tag "webserver" and project tag set to "apache". But the enviornment tag(env) of one instance is set to "prod" and the other is set to "dev". So here, what we exacly going to do is creating an IAM user with a custom policy so that this user will have the privilege to see the list of instances on the AWS console, but will only have privilege to stop, start and reboot the instance with env tage set to "dev".
 
 ## Steps 
 
