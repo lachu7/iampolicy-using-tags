@@ -58,11 +58,11 @@ So, the required IAM policy is:
                 "ec2:StopInstances",
                 "ec2:RebootInstances"
             ],
-            "Resource": "arn:aws:ec2:ap-south-1:982583122971:instance/*",
+            "Resource": "arn:aws:ec2:ap-south-1:account-id:instance/*",
             "Condition": {
                 "StringEquals": {
                     "ec2:ResourceTag/Name": "webserver",
-                    "ec2:ResourceTag/project": "zomato",
+                    "ec2:ResourceTag/project": "apache",
                     "ec2:ResourceTag/env": "dev"
                 }
             }
