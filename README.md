@@ -1,4 +1,4 @@
-# iampolicy-using-tags
+# IAMpolicy to start, stop and reboot instance based on a particular tag
 
 ## Description
 
@@ -36,6 +36,8 @@ Create an IAM user "user" with "Password - AWS Management Console access". Choos
 
 Now, the main step of the task is here- Creating the custom IAM policy that enables the IAM user "user" to see the list of all the instances on the AWS console, but will only have privilege to stop, start and reboot the instance with "env" tag set to "dev".
 
+You can create IAM policy from your AWS console [click here]( https://aws.amazon.com/console/ ) >> IAM >> Policies >> Create policy.
+
 So, the required IAM policy is:
 
 ```
@@ -68,6 +70,7 @@ So, the required IAM policy is:
     ]
 }
 ```
+Finally, we need to attach this policy to the IAM user "user".
 
 ### Step 4
 
