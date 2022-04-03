@@ -73,9 +73,10 @@ So, the required IAM policy is:
 
 Now we need to login to the AWS console as the IAM user "user". Here we will be able to see the list of instances. We will be able to successfully start, stop and reboot the instance with env tag set to "dev".
 
-But when we try to start the instance with "env" tag set to "prod", it will show the following error:
+But when we try to stop the instance with "env" tag set to "prod", it will show the following error:
+![aws-git](https://user-images.githubusercontent.com/100779997/161439693-3e4670e1-875c-416d-9758-45b2e61e7b87.png)
 
 
+## Conclusion
 
-
-
+So this is the IAM policy that could exaclty stop, start and reboot an instance based on the tags we have provided for it. Hope this little piece of work helps you out in some way. Thank you!
