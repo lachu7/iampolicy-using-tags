@@ -28,11 +28,11 @@ project = apache
 env = dev
 ```
 
-## Step 2
+### Step 2
 
 Create an IAM user "user" with "Password - AWS Management Console access". Choose a custom password or an auto generated password for the user.
 
-## Step 3
+### Step 3
 
 Now, the main step of the task is here- Creating the custom IAM policy that enables the IAM user "user" to see the list of all the instances on the AWS console, but will only have privilege to stop, start and reboot the instance with "env" tag set to "dev".
 
